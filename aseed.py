@@ -5,8 +5,9 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return render_template('login.html')
+return render_template('login.html')
 
+return render_template('login.html')return render_template('login.html', title='Login')
 @app.route('/login', methods=['POST'])
 def login():
     username = request.form['username']
